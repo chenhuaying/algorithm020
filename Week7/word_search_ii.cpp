@@ -80,7 +80,7 @@ class Solution {
 };
 
 int main(int argc, char const* argv[]) {
-  vector<vector<char>> boards[] = {
+  vector<vector<vector<char>>> boards = {
       {{'a', 'a'}},
       {{'a', 'a'}},
       {{'o', 'a', 'a', 'n'},
@@ -88,12 +88,12 @@ int main(int argc, char const* argv[]) {
        {'i', 'h', 'k', 'r'},
        {'i', 'f', 'l', 'v'}},
   };
-  vector<string> targets[] = {
+  vector<vector<string>> targets = {
       {"a"},
       {"aaa"},
       {"oath", "pea", "eat", "rain"},
   };
-  for (int i = 0; i < 3; i++) {
+  for (int i = 0; i < boards.size(); i++) {
     Solution s;
     auto res = s.findWords(boards[i], targets[i]);
     for (auto itm : res) {

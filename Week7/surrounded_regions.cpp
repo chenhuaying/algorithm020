@@ -80,17 +80,16 @@ class Solution {
 
 int main(int argc, char const* argv[]) {
   Solution s;
-  vector<vector<char>> grid;
-  grid.push_back({'X', 'O', 'O', 'X', 'X', 'X', 'O', 'X', 'O', 'O'});
-  grid.push_back({'X', 'O', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'});
-  grid.push_back({'X', 'X', 'X', 'X', 'O', 'X', 'X', 'X', 'X', 'X'});
-  grid.push_back({'X', 'O', 'X', 'X', 'X', 'O', 'X', 'X', 'X', 'O'});
-  grid.push_back({'O', 'X', 'X', 'X', 'O', 'X', 'O', 'X', 'O', 'X'});
-  grid.push_back({'X', 'X', 'O', 'X', 'X', 'O', 'O', 'X', 'X', 'X'});
-  grid.push_back({'O', 'X', 'X', 'O', 'O', 'X', 'O', 'X', 'X', 'O'});
-  grid.push_back({'O', 'X', 'X', 'X', 'X', 'X', 'O', 'X', 'X', 'X'});
-  grid.push_back({'X', 'O', 'O', 'X', 'X', 'O', 'X', 'X', 'O', 'O'});
-  grid.push_back({'X', 'X', 'X', 'O', 'O', 'X', 'O', 'X', 'X', 'O'});
+  vector<vector<char>> grid{{'X', 'O', 'O', 'X', 'X', 'X', 'O', 'X', 'O', 'O'},
+                            {'X', 'O', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'},
+                            {'X', 'X', 'X', 'X', 'O', 'X', 'X', 'X', 'X', 'X'},
+                            {'X', 'O', 'X', 'X', 'X', 'O', 'X', 'X', 'X', 'O'},
+                            {'O', 'X', 'X', 'X', 'O', 'X', 'O', 'X', 'O', 'X'},
+                            {'X', 'X', 'O', 'X', 'X', 'O', 'O', 'X', 'X', 'X'},
+                            {'O', 'X', 'X', 'O', 'O', 'X', 'O', 'X', 'X', 'O'},
+                            {'O', 'X', 'X', 'X', 'X', 'X', 'O', 'X', 'X', 'X'},
+                            {'X', 'O', 'O', 'X', 'X', 'O', 'X', 'X', 'O', 'O'},
+                            {'X', 'X', 'X', 'O', 'O', 'X', 'O', 'X', 'X', 'O'}};
 
   s.solve(grid);
   for (int i = 0; i < grid.size(); i++) {
